@@ -1,0 +1,2 @@
+# trader
+Django/ Bootstrap/ Heroku
