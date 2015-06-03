@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+{% include "navbar.html" %}
+    <div class="jumbotron">
+      <div class="container">
+        <div class ='row'>
+          <div class='col-sm-6 pull-right' style='text-align:center;'>
+          <i class="fa fa-share-alt fa-5x"></i>
+          <h1>Invite Friend &amp; Earn Rewards</h1>
+          <p>Share your unique link below via Email, Facebook, or Twitter to earn rewards from ForexBull.com</p>
+          <div class='well' style='background-color:white'>{{ ref_url }}</div>
+          Share</br>
+          </br>
+          <i class="fa fa-facebook-official fa-5x" style="color:#3b5998"></i>
+          <i class="fa fa-twitter-square fa-5x" style="color:#4099FF"></i>
+          <i class="fa fa-linkedin-square fa-5x" style="color:#007bb6"></i>
+          <i class="fa fa-reddit fa-5x" style="color:#90020"></i>
+          <i class="fa fa-google-plus-square fa-5x" style="color:#D34836"></i>
+          </div>
+          <div class='col-sm-6 pull-left'>
+            <img src = "{% static 'img/forex2.jpg' %}" class='img-responsive img-rounded' />
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <div class="container" style='text-align:center;'>
+  </br>
+  Joined number is: {{ count }}
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>5 Joined</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          60%
+        </div>
+      </div>
+      <h4>Reward Name</h4>
+      <hr/>
+      <span style='text-align:left !important;'>
+        <h5>Rewards Include:</h5>
+          <ul>
+            <li>Reward 1</li>
+            <li>Reward 2</li>
+          </ul>
+        <hr/>
+      </span>
+    </div>
+    <div class="col-sm-3">
+      <h3>15 Joined</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          60%
+        </div>
+      </div>
+      <h4>Reward Name</h4>
+      <hr/>
+      <span style='text-align:left !important;'>
+        <h5>Rewards Include:</h5>
+          <ul>
+            <li>Reward 1</li>
+            <li>Reward 2</li>
+          </ul>
+        <hr/>
+      </span>
+    </div>
+    <div class="col-sm-3">
+      <h3>25 Joined</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          60%
+        </div>
+      </div>
+      <h4>Reward Name</h4>
+      <hr/>
+      <span style='text-align:left !important;'>
+        <h5>Rewards Include:</h5>
+          <ul>
+            <li>Reward 1</li>
+            <li>Reward 2</li>
+          </ul>
+        <hr/>
+      </span>
+    </div>
+    <div class="col-sm-3">
+      <h3>50 Joined</h3>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+          60%
+        </div>
+      </div>
+      <h4>Reward Name</h4>
+      <hr/>
+      <span style='text-align:left !important;'>
+        <h5>Rewards Include:</h5>
+          <ul>
+            <li>Reward 1</li>
+            <li>Reward 2</li>
+          </ul>
+        <hr/>
+      </span>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
